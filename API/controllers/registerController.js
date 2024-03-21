@@ -487,7 +487,7 @@ exports.getProfile = async (req, res) => {
     let image;
     if (userData[0].image != null) {
       image = decryption(userData[0].image);
-      let path = `http://localhost:4050/assets/images/userImage/`;
+      let path = `https://prayer-quest-trial.b-cdn.net/assets/images/userImage/`;
       let concatImage = path + image;
       image = encryption(concatImage);
     }
@@ -678,14 +678,14 @@ exports.updateProfile = async (req, res) => {
     let image;
     if (updateuser.image != null) {
       image = decryption(updateuser.image);
-      let path = `http://localhost:4050/assets/images/userImage/`;
+      let path = `https://prayer-quest-trial.b-cdn.net/assets/images/userImage/`;
       let concatImage = path + image;
       image = encryption(concatImage);
     }
     let cprofile;
     if (updateuser.coverImage != null) {
       cprofile = decryption(updateuser.coverImage);
-      let path = `http://localhost:4050/assets/images/userImage/`;
+      let path = `https://prayer-quest-trial.b-cdn.net/assets/images/userImage/`;
       let concatImage = path + cprofile;
       cprofile = encryption(concatImage);
     }
@@ -732,14 +732,14 @@ exports.usergetProfile = async (req, res) => {
     let image;
     if (userData.image != null) {
       image = decryption(userData.image);
-      let path = `http://localhost:4050/assets/images/userImage/`;
+      let path = `https://prayer-quest-trial.b-cdn.net/assets/images/userImage/`;
       let concatImage = path + image;
       image = encryption(concatImage);
     }
     let coverImage;
     if (userData.coverImage != null) {
       coverImage = decryption(userData.coverImage);
-      let path = `http://localhost:4050/assets/images/userImage/`;
+      let path = `https://prayer-quest-trial.b-cdn.net/assets/images/userImage/`;
       let concatImage = path + coverImage;
       coverImage = encryption(concatImage);
     }

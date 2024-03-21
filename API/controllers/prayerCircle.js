@@ -40,7 +40,7 @@ exports.createCircleGroup = async (req, res) => {
     console.log(groupdata);
     let image;
     if (groupdata.groupImage) {
-      let path = "http://localhost:4050/assets/images/groupImage/";
+      let path = "https://prayer-quest-trial.b-cdn.net/assets/images/groupImage/";
       image = decryption(groupdata.groupImage);
       let concatImage = path + image;
       image = encryption(concatImage);
@@ -113,12 +113,12 @@ exports.addPrayer = async (req, res) => {
     let prayerData = await data.save();
     let prayer;
     if (prayerData.prayerImage != null) {
-      let path = "http://localhost:4050/assets/images/prayer/";
+      let path = "https://prayer-quest-trial.b-cdn.net/assets/images/prayer/";
       prayer = decryption(prayerData.prayerImage);
       let concatImage = path + prayer;
       prayer = encryption(concatImage);
     } else {
-      let path = "http://localhost:4050/assets/images/prayer/";
+      let path = "https://prayer-quest-trial.b-cdn.net/assets/images/prayer/";
       prayer = decryption(prayerData.prayerVideo);
       let concatImage = path + prayer;
       prayer = encryption(concatImage);
