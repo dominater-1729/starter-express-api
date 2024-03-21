@@ -40,8 +40,9 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-7">
                 <div class="circle-video position-relative text-center mb-10px">
                     {{#equal prayerData.type "video"}}
-                    <video src="/assets/images/prayer/{{decryption prayerData.prayer}}" controls
-                        style="border-radius: 16px;width: 850px;"></video>
+                    <video
+                        src="https://prayer-quest-trial.b-cdn.net/assets/images/prayer/{{decryption prayerData.prayer}}"
+                        controls style="border-radius: 16px;width: 850px;"></video>
                     {{/equal}}
                     {{#equal prayerData.type "image"}}
                     <img src="https://prayer-quest-trial.b-cdn.net/assets/images/prayer/{{decryption prayerData.prayer}}"
