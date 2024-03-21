@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/fontawesome.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="shortcut icon" href="https://prayer-quest-trial.b-cdn.net/assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://prayer-quest-trial.b-cdn.net/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://prayer-quest-trial.b-cdn.net/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://prayer-quest-trial.b-cdn.net/assets/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -113,39 +113,39 @@
         });
 
 
-            $(document).ready(function () {
-                $("#formAuthentication").validate({
-                    rules: {
-                        email: {
-                            required: true
-                        },
-                        password: {
-                            minlength: 8,
-                            required: true
-                        },
+        $(document).ready(function () {
+            $("#formAuthentication").validate({
+                rules: {
+                    email: {
+                        required: true
                     },
-                    messages: {
-                        email: {
-                            required: "Please enter email"
-                        },
-                        password: {
-                            minlength: "Please enter minimum 8 digits",
-                            required: "Please enter password"
-                        },
-                    }
-                });
+                    password: {
+                        minlength: 8,
+                        required: true
+                    },
+                },
+                messages: {
+                    email: {
+                        required: "Please enter email"
+                    },
+                    password: {
+                        minlength: "Please enter minimum 8 digits",
+                        required: "Please enter password"
+                    },
+                }
             });
+        });
     </script>
-        {{#if successToast}}
-        <script>
-            toastr.success('{{successToast}}');
-        </script>
-        {{/if}}
-        {{#if errorToast}}
-        <script>
-            toastr.error('{{errorToast}}');
-        </script>
-        {{/if}}
+    {{#if successToast}}
+    <script>
+        toastr.success('{{successToast}}');
+    </script>
+    {{/if}}
+    {{#if errorToast}}
+    <script>
+        toastr.error('{{errorToast}}');
+    </script>
+    {{/if}}
 </body>
 
 </html>
