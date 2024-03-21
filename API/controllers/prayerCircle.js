@@ -111,7 +111,7 @@ exports.addPrayer = async (req, res) => {
       type: type,
     });
     let prayerData = await data.save();
-    let prayer;<img src="../assets
+    let prayer;
     if (prayerData.prayerImage != null) {
       let path = "https://prayer-quest-trial.b-cdn.net/assets/images/prayer/";
       prayer = decryption(prayerData.prayerImage);
