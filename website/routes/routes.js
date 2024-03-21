@@ -24,7 +24,7 @@ const compressMiddleware = require('../middlewares/compress')
 //multer
 const userProfile = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "./public/assets/images/userImage");
+    cb(null, "./public//images/userImage");
   },
   filename: function (req, file, cb) {
     const ext = file.mimetype.compressMiddlewaresplit("/")[1];
