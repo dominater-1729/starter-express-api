@@ -118,9 +118,10 @@
                     <div class="user-details d-flex align-items-center gap-2">
                         <div class="user-img">
                             {{#if userImage}}
-                            <img src="/assets/images/userImage/{{../decryption userImage}}" alt="">
+                            <img src="https://prayer-quest-trial.b-cdn.net/assets/images/userImage/{{../decryption userImage}}"
+                                alt="">
                             {{else}}
-                            <img src="/assets/images/blank.png" alt="">
+                            <img src="https://prayer-quest-trial.b-cdn.net/assets/images/blank.png" alt="">
                             {{/if}}
                         </div>
                         <div class="user-share d-flex align-items-center gap-2">
@@ -134,7 +135,8 @@
                 </a>
                 <div class="circle-video position-relative mb-10px">
                     {{#equal type "image"}}
-                    <img src="/assets/images/prayer/{{../decryption prayer}}" alt="">
+                    <img src="https://prayer-quest-trial.b-cdn.net/assets/images/prayer/{{../decryption prayer}}"
+                        alt="">
                     <div class="overlay"></div>
                     {{/equal}}
                     {{#equal type "video"}}
@@ -253,7 +255,7 @@
         {{else}}
         <div class="table-responsive">
             <div class="illustration text-center">
-                <img src="/assets/images/nodatapq.svg" alt="">
+                <img src="https://prayer-quest-trial.b-cdn.net/assets/images/nodatapq.svg" alt="">
             </div>
             <h3 class="text-center">No prayer found</h3>
         </div>
